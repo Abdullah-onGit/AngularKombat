@@ -1,4 +1,4 @@
-This a Game based web application inspired by Mortal Kombat mobile game.
+This project is a Game based web application inspired by Mortal Kombat mobile game.
 
 
 # AngularKombat
