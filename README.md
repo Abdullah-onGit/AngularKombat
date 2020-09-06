@@ -1,3 +1,6 @@
+This a Game based web application inspired by Mortal Kombat mobile game.
+
+
 # AngularKombat
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.

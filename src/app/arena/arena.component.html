@@ -1,0 +1,29 @@
+<style>
+    #arena {
+        width: 70%;
+        margin: auto;
+    }
+</style>
+<div id="arena" class="row">
+    <div id="player1" class="col-sm" style="text-align: center;">
+        <h3>{{player1.name}}
+            <span *ngIf="player1.won" style="color:green;">won</span>
+            <span *ngIf="player1.defeated" style="color:red;">defeated</span>
+        </h3>
+        <img [src]="player1.img" width="320" height="400" />
+        <p>Health: {{player1.health}}</p>
+        <button class="btn btn-primary" [disabled]="!player1.isAttacking"
+            (click)="onAttacking(player1,player2)">Attack</button>
+    </div>
+
+    <div id="player2" class="col-sm" style="text-align: center;">
+        <h3>{{player2.name}}
+            <span *ngIf="player2.won" style="color:green;">won</span>
+            <span *ngIf="player2.defeated" style="color:red;">defeated</span>
+        </h3>
+        <img [src]="player2.img" width="320" height="400" />
+        <p>Health: {{player2.health}}</p>
+        <button class="btn btn-primary" [disabled]="!player2.isAttacking"
+            (click)="onAttacking(player2,player1)">Attack</button>
+    </div>
+</div>
