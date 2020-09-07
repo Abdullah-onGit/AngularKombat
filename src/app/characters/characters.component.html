@@ -1,0 +1,12 @@
+<div class="row" style="width: 90%;margin: auto;">
+    <div *ngFor="let player of playersList" class="col-sm" style="text-align: center;">
+        <h3>{{player.name}}</h3>
+        <div class="row col-sm">
+            <img class="col-sm-12" [src]="player.img" width="320" height="400" />
+
+            <div class="col-sm" style="text-align: left;">Health: {{player.health}}</div>
+            <div class="col-sm" style="text-align: right;">Basic Attack: {{player.basicAttack}}</div>
+
+        </div>
+    </div>
+</div>
